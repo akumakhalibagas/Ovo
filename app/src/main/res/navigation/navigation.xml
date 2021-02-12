@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/nav_home">
+
+
+    <fragment android:id="@+id/nav_home"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"
+        android:name="com.makhalibagas.ovo.ui.HomeFragment"/>
+
+    <fragment android:id="@+id/nav_deals"
+        android:label="Deals"
+        tools:layout="@layout/fragment_deals"
+        android:name="com.makhalibagas.ovo.ui.DealsFragment"/>
+
+
+    <fragment android:id="@+id/nav_finance"
+        android:label="Finance"
+        tools:layout="@layout/fragment_finance"
+        android:name="com.makhalibagas.ovo.ui.FinanceFragment"/>
+
+    <fragment android:id="@+id/nav_profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.makhalibagas.ovo.ui.ProfileFragment"/>
+
+</navigation>

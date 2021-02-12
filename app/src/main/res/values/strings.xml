@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ovo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ovo_cash">OVO Cash</string>
+    <string name="rp">Rp</string>
+    <string name="saldo">9.999.999.990</string>
+    <string name="ovo_points">OVO Points</string>
+    <string name="points">100.821</string>
+    <string name="top_up">Top Up</string>
+    <string name="transfer">Transfer</string>
+    <string name="history">History</string>
+    <string name="pln">PLN</string>
+    <string name="pulsa">Pulsa</string>
+    <string name="paket_data">Paket Data</string>
+    <string name="air_pdam">Air PDAM</string>
+    <string name="bpjs">BPJS</string>
+    <string name="inet"><![CDATA[Internet & TV \nKabel]]></string>
+    <string name="iuran">Iuran \nLingkungan</string>
+    <string name="lainya">Lainya</string>
+    <string name="promo">Info dan Promo Spesial</string>
+    <string name="lihat_semua">Lihat Semua</string>
+</resources>

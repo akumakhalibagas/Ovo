@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".ui.topup.InstanTopupFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Up Ke"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/robotobold"/>
+
+            <com.loopeer.shadow.ShadowView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                app:shadowRadius="100dp"
+                app:shadowMargin="6dp"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/colorWhite"
+                app:shadowColor="#C3C0C0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/iv_ovo"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/logoovo_svg"
+                        android:padding="2dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/colorPrimary"
+                        app:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_ovocash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OVO Cash"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/robotomedium"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintStart_toEndOf="@id/iv_ovo"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balance Rp9.999.999.990"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/helvetica"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@id/tv_ovocash"
+                        app:layout_constraintStart_toEndOf="@id/iv_ovo"
+                        android:layout_marginStart="10dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.loopeer.shadow.ShadowView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="#F3F3F3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Nominal Top Up"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/robotobold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:layout_marginTop="15dp">
+
+                <com.loopeer.shadow.ShadowView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    app:shadowMargin="4dp"
+                    app:shadowColor="#C3C0C0"
+                    app:shadowRadius="100dp"
+                    app:cornerRadius="20dp"
+                    android:background="@color/colorWhite">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp100.000"
+                        app:layout_gravity="center"
+                        android:fontFamily="@font/robotoreguler"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"/>
+                </com.loopeer.shadow.ShadowView>
+
+                <com.loopeer.shadow.ShadowView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    app:shadowMargin="4dp"
+                    app:shadowColor="#C3C0C0"
+                    app:cornerRadius="20dp"
+                    android:layout_marginStart="6dp"
+                    app:shadowRadius="100dp"
+                    android:background="@color/colorWhite">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp200.000"
+                        app:layout_gravity="center"
+                        android:fontFamily="@font/robotoreguler"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"/>
+                </com.loopeer.shadow.ShadowView>
+
+                <com.loopeer.shadow.ShadowView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    app:shadowMargin="4dp"
+                    android:layout_marginStart="6dp"
+                    app:shadowColor="#C3C0C0"
+                    app:shadowRadius="100dp"
+                    app:cornerRadius="20dp"
+                    android:background="@color/colorWhite">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp300.000"
+                        app:layout_gravity="center"
+                        android:fontFamily="@font/robotoreguler"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"/>
+                </com.loopeer.shadow.ShadowView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atau masukan nominal top up di sini"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/robotoreguler"
+                android:textColor="@color/colorGray"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Minimal Rp10.000"
+                android:textSize="12sp"
+                android:background="#F4F4F4"
+                android:paddingStart="10dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="6dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="#F3F3F3"
+                android:layout_marginTop="25dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kartu Debit"
+                android:textSize="16sp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/robotobold"/>
+
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/ic_kartudb"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        app:cardElevation="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_shapebt"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/robotobold"
+            android:textAllCaps="false"
+            android:text="Top Up Sekarang"
+            app:cornerRadius="25dp"
+            android:layout_gravity="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
